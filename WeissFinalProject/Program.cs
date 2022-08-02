@@ -35,8 +35,8 @@ namespace WeissFinalProject
         public class TypeofMeal //Entrae, appetizer, soup etc..
         {
             public string chickenMeal = "Chicken Alfredo";
-            public string burgerMeal;
-            public string soupMeal;
+            public string burgerMeal = "Tacos";
+            public string soupMeal = "Chicken Noodle Soup";
         }
 
         public class Instructions //also known as directions
