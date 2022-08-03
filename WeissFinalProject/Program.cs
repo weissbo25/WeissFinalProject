@@ -8,12 +8,16 @@ namespace WeissFinalProject
 {
     class Program
     {
+        public static object mainDish { get; private set; }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("What recipe you would like to try: ");
-            Console.WriteLine("Chicken Alfredo, Pizza, Beef and Broccoli, Tacos");
+            string mainDish = "Chicken, Burger, Soups";
+            Console.WriteLine($"What type of dish are you looking for to have for dinner tonight?  {mainDish}");
+            Console.ReadLine();
+            Console.WriteLine($"");
             Console.ReadKey();
-            Console.ReadKey();
+            Console.ReadLine();
         }
 
         public class Ingredients //what all goes in the meal
@@ -21,19 +25,27 @@ namespace WeissFinalProject
 
         }
 
-        public class TimeofMeal //supper, dinner, lunch, breakfast, snack
-        { 
-        
+        public class Dishes //Chicken, Burgers, Soups
+        {
+            public string mainDish = "Chicken, Burger, Soups";
+            public string appetizerDish = "Mozzarella Sticks, Cheese Balls, PickleSpears";
+            public string breakfastDish = "Pancakes, Waffles, Omelet";
+
+
         }
 
         public class TypeofMeal //Entrae, appetizer, soup etc..
         {
-
+            public string chickenMeal = "Chicken Alfredo";
+            public string burgerMeal = "Tacos";
+            public string soupMeal = "Chicken Noodle Soup";
         }
 
         public class Instructions //also known as directions
         {
-
+            public string chickenmealInstructions = "";
+            public string burgermealInstructions = "";
+            public string soupmealInstructions = "";
         }
 
 
